@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #7808f0;
+    line-height: 0.5;
+}
+
+.cal1 {
+    width: 500px;
+    padding: 100px 0px 100px 0px;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.25px;
+    /* background-color: white; */
+    position: absolute;
+    text-align: center;
+}
+
+#display {
+    border: none;
+    background: white;
+    border-radius: 30px;
+    width: 245px;
+    height: 60px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: auto;
+    border: 2px solid white;
+    color: black;
+}
+
+.btnDesign {
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: white;
+    padding-top: 1px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.operator {
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: white;
+    padding-top: 1px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#zero {
+    width: 115px;
+    height: 55px;
+    border-radius: 30px;
+    padding-top: 1px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 2px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.operator:hover {
+    background-color: #00f9ff;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    left: 0;
+    transform: translate(50%, -50%);
+    bottom: 50%;
+    position: absolute;
+}
+
+h2 {
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    transform: translate(170%, 50%);
+}
