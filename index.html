@@ -12,15 +12,21 @@
 </head>
 
 <body>
-    <h1>Online Calculator</h1>
-    <h2>By:- Mohammad Rasel</h2>
+    <div class="text">
+        <h1>Online Calculator</h1>
+        <h2>By:- Mohammad Rasel</h2>
 
+    </div>
     <form name="form1" class="cal1" action="calculator.html" method="post">
 
         <input type="text" name="answer" id="display">
         <br>
         <br>
         <input type="button" class="btnDesign" id="zero" value="C" onclick="form1.answer.value=''">
+
+        <input type="button" class="btnDesign" id="zero" value="DE"
+            onclick="form1.answer.value= form1.answer.value.toString().slice(0,-1)">
+
         <input type="button" class="btnDesign" value="00" onclick="form1.answer.value+='00'">
         <input type="button" class="operator" value="/" onclick="form1.answer.value+='/'">
         <br><br>
@@ -42,7 +48,7 @@
 
         <input type="button" id="zero" value="0" onclick="form1.answer.value+='0'">
         <input type="button" class="btnDesign" value="." onclick="form1.answer.value+='.'">
-        <input type="button" class="operator" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
+        <input type="button" class="operator" id="bt" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
 
     </form>
 </body>
